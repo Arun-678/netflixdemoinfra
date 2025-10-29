@@ -6,7 +6,7 @@ resource "aws_instance" "one" {
 count = 4
 ami = "ami-0360c520857e3138f"
 instance_type = "t2.medium"
-key_name = "argocd"
+key_name = "demoserver2"
 vpc_security_group_ids = ["sg-043b2f942672032aa"]
 tags = {
 Name = var.instance_names[count.index]
